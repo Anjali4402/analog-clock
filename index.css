@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    border-style:groove;
+    width:95%;
+    margin: 20px auto;
+    height: 95vh;
+    background-image:url('image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.heading{
+    color:white;
+    text-align: center;
+    font-size:6.5em;
+    font-family: monospace;
+    color:crimson;
+    margin-bottom:10px;
+}
+.img-clock{
+    width:30vw;
+    height:30vw;
+    margin:20px auto;
+    background-image: url('clock-img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+}
+.img-clock .center-dot{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:3vw;
+    height:3vw;
+    background-color: black;
+    border-radius: 50%;
+}
+.needle .hr{
+    position:absolute;
+    height: 5vw;
+    width:1vw;
+    top:33%;
+    left:48.5%;
+    border-radius:5px 5px 0 0;
+    background-color: black; 
+    transform: rotate(190deg);
+    transform-origin: bottom;
+}
+.needle .min{
+    position:absolute;
+    height:7vw;
+    width:0.4vw;
+    top:26%;
+    left:49.5%;
+    border-radius: 5px 5px 0 0;
+    background-color: black; 
+}
+.needle .sec{
+    position:absolute;
+    height:180px;
+    height: 9vw;
+    width:3px;
+    top:20.5%;
+    left:49.5%;
+    border-radius: 5px 5px 0 0;
+    background-color: red; 
+} 
+@media  screen and (max-width:1500px) {
+    .heading{
+        margin-top:5vw;
+    }
+    .img-clock{
+        margin-top:5vw;
+    }
+}
